@@ -36,5 +36,6 @@ export async function addContact(name, email, phone) {
     const newContact = { id: nanoid(), name, email, phone }
     contacts.push(newContact)
     await fs.writeFile(contactsPath, JSON.stringify(contacts, null, 2));
+    /sdfsdf
     return newContact;
 }
